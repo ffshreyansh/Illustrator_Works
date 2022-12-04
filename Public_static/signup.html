@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mint Sign up</title>
+    <link
+      rel="stylesheet"
+      href="js/bootstrap-4.0.0-beta-dist/css/bootstrap.css"
+    />
+    <link
+      rel="stylesheet"
+      href="js/bootstrap-4.0.0-beta-dist/css/bootstrap-grid.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Indie+Flower"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link rel="stylesheet" href="superfish/horz_menu.css" type="text/css" />
+    <link rel="stylesheet" href="css/styles.css" type="text/css" />
+    <link rel="stylesheet" href="css/signup.css" type="text/css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Indie+Flower|Source+Sans+Pro"
+    />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css"
+    />
+    <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="superfish/superfish.js"></script>
+    <script type="text/javascript" src="superfish/site.js"></script>
+    <script type="text/javascript" src="js/signup.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.12.4.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+    ></script>
+    <script>
+      $(function() {
+          $('#datepicker').datepicker({
+              changeMonth: true,
+              changeYear: true,
+              yearRange: '1910:+nn',
+              defaultDate: null,
+          });
+      });
+    </script>
+  </head>
+  <body>
+
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-white">
+        <div class="container">
+            <a class="navbar-brand logo" href="./index.html"><i class="ion-paper-airplane" style="color: #14CC60"></i>Mint</a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html#how_it_works">How it Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./signup.html">Get Started</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html#con">Contact</a>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav d-none d-sm-block">
+                    <li class="nav-item">
+                        <a class="nav-link but login" href="./login.html"><i class="fas fa-key"></i>
+                            &nbsp;Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+
+    </header>
+    <div class="divider"></div>
+
+    <div class="signupbox">
+      <div>
+        <h2 class="heading-two">Welcome!</h2>
+      </div>
+      <div>
+        <div>
+          <div class="input-container">
+            <input
+              class="text-input"
+              type="text"
+              name="first_name"
+              value=""
+              id="fname"
+            />
+            <label class="floating-label" for="fname">First Name</label>
+          </div>
+          <div class="input-container">
+            <input
+              class="text-input"
+              type="text"
+              name="last_name"
+              value=""
+              id="lname"
+            />
+            <label class="floating-label" for="lname">Last Name</label>
+          </div>
+          <div class="input-container">
+            <input
+              class="text-input"
+              type="text"
+              name="mobile"
+              value=""
+              id="mobile"
+            />
+            <label class="floating-label" for="mobile">Mobile Number</label>
+          </div>
+          <div class="input-container">
+            <input
+              class="text-input"
+              type="text"
+              name="email"
+              value=""
+              id="email"
+            />
+            <label class="floating-label" for="email">Email</label>
+          </div>
+          <div class="input-container">
+            <input
+              class="text-input"
+              type="password"
+              name="password"
+              value=""
+              id="pass"
+            />
+            <label class="floating-label" for="pass">Password</label>
+          </div>
+          <div class="input-container">
+            <input class="text-input" type="text" id="datepicker" />
+            <label class="floating-label" for="datepicker">Birthday</label>
+          </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                <label class="form-check-label" for="female">&emsp;Female</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                <label class="form-check-label" for="male">&emsp;Male</label>
+            </div>
+        </div>
+
+        <input
+          id="create-account"
+          type="button"
+          value="Create Account"
+          class="button"
+        />
+      </div>
+    </div>
+  </body>
+</html>
